@@ -18,6 +18,15 @@ const library = [
 
 const numberOfBooksRead = () => {
   // write your code here
+
+	let count = 0;
+	for (let i = 0; i < library; i++) {
+		let value = library[i][readingStatus];
+		if(value){
+			count++;
+		}
+	}
+	return count;
 };
 
 // Do not change the code below
